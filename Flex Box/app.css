@@ -152,3 +152,15 @@ h2{
 	font-size: 32px;
 	font-weight: 800;
 }
+
+
+/*for smartphone layout*/
+
+@media (max-width: 750px){
+	.panel {
+	  flex-direction: column;
+	}
+	body{
+		background-color: white;
+	}
+}
