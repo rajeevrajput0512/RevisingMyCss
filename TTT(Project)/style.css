@@ -1,3 +1,7 @@
+:root {
+  --size: 10rem;
+  --color: #008080;
+}
 
 * {
   margin: 0;
@@ -30,7 +34,7 @@ body {
 }
 
 .switch {
-  background: #008080;
+  background: var(--color);
   border-radius: 50%;
 }
 
@@ -51,9 +55,9 @@ body {
 }
 
 .box {
-  width: 10rem;
-  height: 10rem;
-  border: 0.1rem solid #008080;
+  width: var(--size);
+  height: var(--size);
+  border: 0.1rem solid var(--color);
   position: relative;
 }
 
@@ -81,7 +85,7 @@ body {
 .box.x::before {
   content: "";
   position: absolute;
-  width: calc(10rem * 0.18);
+  width: calc(var(--size) * 0.18);
   height: 90%;
   left: 50%;
   top: 50%;
@@ -123,7 +127,7 @@ body {
   margin-top: 5rem;
   text-transform: uppercase;
   padding: 1rem 5rem;
-  background:#008080;
+  background: var(--color);
   border: none;
   color: #fff;
   border-radius: 1rem;
@@ -148,7 +152,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background: #008080;
+  background: var(--color);
   color: #fff;
   display: none;
   align-items: center;
@@ -177,5 +181,5 @@ body {
 }
 
 .show {
-  display: hidden;
+  display:flex !important;
 }
