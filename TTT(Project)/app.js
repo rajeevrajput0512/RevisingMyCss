@@ -81,7 +81,7 @@ let player = (e) => {
       // UPADTING TURN
       turn = false;
       update();
-      bot();
+      setTimeout(bot, 500); // To avoid instant popout of the moves
     }
   }
 };
